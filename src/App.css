@@ -1,0 +1,67 @@
+/* import roboto condensed google font*/ 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+/*initialize variables for colors*/
+:root {
+  --white: #fff;
+  --grey: #808080;
+  --turquoise: #40E0D0;
+  --dark: #1110;
+}
+
+/*and set it to the font family of the portfolio page*/
+body {
+  font-family: "Roboto Condensed" sans-serif;
+}
+
+/***************************************************/
+/*Navbar*/
+/* change the font weight and space in links of the navbar*/
+nav a.nav-link {
+  font-weight: 350;
+  letter-spacing: 0.04rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+/*change name style if shown*/
+.navbar-brand {
+  font-weight: 600;
+  font-size: x-large !important;
+  color: var(--turquoise) !important;
+  /*max-width: 17.25rem;
+  padding: 0 !important;
+  height: 6rem !important;*/
+}
+
+/*
+nav ul li {
+  text-transform: uppercase;
+}*/
+
+/* for each link in the navbar change its color and space between each other*/
+.navbar-nav > li > a {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  color: var(--turquoise) !important;  /*use the variable named white, and use important to override the default bootstrap color*/
+  border-top: 0.19rem solid var(--dark);   /*add the top border to prevent the shift to down of the link when clicked */
+}
+
+/*change link attitude on select*/
+.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
+  border-top: 0.19rem solid var(--grey);
+}
+
+/*change link attitude on hover*/
+.navbar-nav > li > a:hover {
+  border-top: 0.19rem solid var(--grey);
+}
+
+
+/*********************************/
+/*Header*/
+.header-wraper {
+  position: relative;
+  
+}
+
